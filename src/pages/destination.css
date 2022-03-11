@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body{
+    background-image: url(../img/background-destination-desktop.jpg);
+    background-size: cover;
+}
+.destination{
+    height: 100vh;
+    padding-top: 2em;
+    z-index: 1;
+}
+.content-component{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.content-component span{
+    opacity: 0.6;
+}
+
+.destination-tabs{
+    display:  flex;    
+}
+.destination-tabs button{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.tabs-contents{
+    width: 400px;
+    padding-top: 5em;
+    margin-top: 2em;
+}
+.tabs-contents p:first-of-type{
+    line-height: 25px;
+    padding-bottom: 0.5em;
+    font-family: 'Barlow', sans-sarif;
+    font-size: 18px;
+}
+.Globe{
+    margin-top: 2em;
+}
+.Globe p{
+    margin-top: 2em;
+    font-family: 'Barlow', sans-sarif;
+    font-size: 18px;
+}
+.Globe p span{
+    padding-right: 0.5em;
+}
+.Globe img{
+    width: 400px;
+    height: auto;
+    margin-top: 2em;
+    padding-top: 1.5em;
+    /* padding-bottom: 1em; */
+}
+.main-info{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+}
+.main-info h3{
+    font-family: 'Bellefair', sans-serif;
+    font-weight: 400;
+}
+.main-info div{
+    line-height: 14px;
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+hr{
+    opacity: 0.6;
+}
+@media screen and (max-width: 800px){
+.content-component{
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;  
+}
+.destination-tabs{
+    justify-content: center;
+}
+.tabs-contents{
+    width: 300px;
+}
+.tabs-contents p:first-of-type{
+    font-size: 18px;
+}
+.Globe img{
+    width: 200px;
+}
+.Globe p{
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+.tabs-contents{
+   text-align: center;
+   padding-top: 0;
+   margin-top: 2em;
+}
+.main-info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}

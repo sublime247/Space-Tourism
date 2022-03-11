@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+body {
+    background-image: url(../img/background-crew-desktop.jpg);
+    background-position: cover;
+    height: 100vh;
+}
+.wrapper-crew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-crew div:first-of-type{
+    margin-left: 0.8em;
+    /* position: fixed; */
+}
+.wrapper-crew div:last-of-type{
+    margin-right: 0.8em;
+    /* position: fixed; */
+}
+.crew-content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    margin-top: 2em;
+   
+}
+.crew-content div:first-of-type{
+    width: 400px;
+    align-self: center;
+    margin-right: 5em;
+    margin-top: 2em;
+    line-height: 30px;
+}
+.crew-content div:first-of-type p:first-of-type{
+    padding-bottom: 2em;
+}
+.crew-content p span{
+    opacity: 0.6;
+    padding-right: 0.5em;
+}
+.crew-content h3{
+    font-family: 'Barlow', sans-sarif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.crew-content h2{
+    font-family: 'Bellefair', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.crew-content p{
+    font-family: 'Barlow', sans-sarif;
+    font-size: 18px;
+}
+.crew-content img{
+  width: 400px;
+  height: auto;
+  margin-top: 6em;
+margin-left: 1em;
+  /* padding-top: 0.5em; */
+  padding-top: 1em;
+}
+@media screen and (max-width: 800px){
+    .wrapper-crew{
+        justify-content: space-between;
+    }
+    .crew-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+    .crew-content div:first-of-type{
+        /* width: 300px; */
+        align-self: center;
+        text-align: center;
+        margin-right: 0em;
+        margin-top: 0em;
+        line-height: 30px;
+    }
+    .crew-content div:first-of-type p:first-of-type{
+        padding-bottom: 0em;
+    }
+    .crew-content img{
+        margin-top: 0em;
+          margin-left: 0em;
+        padding-top: 1em;
+        text-align: center;
+      }
+      .wrapper-crew div:first-of-type{
+        margin-left: 0em;
+        position: relative;
+        left: 1em;
+    }
+    .wrapper-crew div:last-of-type{
+        margin-right: 0em;
+        position: relative;
+        right: 1em;
+  
+    }
+      
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body{
+    background-image: url(../img/background-technology-desktop.jpg);
+    /* overflow: scroll; */
+    background-size:cover;
+    
+}
+.tech-component{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3em;
+    z-index: 1;
+}
+.tech-content span{
+    opacity: 0.6;
+    letter-spacing: 8px;
+    padding-bottom: 2em;
+}
+.tech-content{
+    width: 400px;
+    color: white;
+}
+.tech-content h2{
+    font-family: 'Bellefair', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+.tech-content p{
+    font-family: 'Barlow', sans-sarif;
+    font-size: 18px;
+   line-height: 25px;
+
+  }
+.tech-img img{
+    margin-top: 4em;
+    width: 500px;
+    height: auto;
+    align-self:center ;
+}
+@media screen and (max-width: 800px){
+.tech-component{
+flex-direction: column-reverse;
+justify-content: center;
+margin-top: 0;
+/* align-items: center; */
+text-align: center;
+}
+.tech-tabs{
+    display: flex;
+}
+.tech-content p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.tech-img img{
+    width: 300px;
+    height: auto;
+}
+.tech-content{
+    width: 300px;
+}
+.tech-content h2{
+    font-size:30px;
+}
+}

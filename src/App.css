@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+header ul{
+  background-image: url(img/rec2.png);
+  width: 50%;
+  padding: 1.5em 3em;
+  /* display: displayNav ? 'block': 'none'; */
+}
+.openNav{
+  display: none;
+}
+.closeNav{
+  display: none;
+}
+header ul a{
+  padding-right: 1em;
+  margin-left: 2em;
+  margin-right: 1em;
+  text-decoration: none;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+header ul a span{
+  margin-left: 0.3em;
+  opacity: 0.6;
+}
+header ul a.active{
+  border-bottom: 2px solid white;
+  padding-bottom: 1.3em;
+}
+@media screen and (max-width: 800px){
+  header{
+    z-index: 1;
+  }
+  header ul{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    padding-top: 1em;
+    height: 100vh;
+    margin-left: 1em;
+    display: 'none';
+  }
+  .openNav{
+    display: block;
+    z-index: 999;
+  }
+  .closeNav{
+    display: block;
+    z-index: 999;
+  }
+  .logo img{
+    width: 50px;
+    margin-left: 0.3em;
+  }
+  .line{
+    display: none;
+  }
+  header ul a {
+    display: block;
+    padding: 1em 1em;
+    padding-left: 3em;
+    margin-left: 0em;
+    margin-right: 0;
+    margin-top: 1em;
+}
+header ul a span{
+  margin-left: 0em;
+}
+header ul a.active{
+  border-bottom: 2px solid white;
+  padding-bottom: 0.8em;
+}
+}
+
+
+
+
